@@ -45,18 +45,7 @@ html_7 = """
 st.markdown(html_7, unsafe_allow_html=True)
 st.markdown("")
 
-import os
-import pandas as pd
-
-# หา path ของไฟล์ปัจจุบัน (home.py)
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# สร้าง path แบบถูกต้องไม่ว่า OS ไหน
-data_path = os.path.join(BASE_DIR, "data", "iris.csv")
-
-# อ่านไฟล์
-dt = pd.read_csv(data_path)
-
+dt = pd.read_csv("data/iris.csv")
 st.write(dt.head(10))
 
 dt1 = dt['petallength'].sum()
