@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 st.header("TEE")
-#st.img("./img/TEE.jpg")
+st.image("./img/TEE.jpg")
 col1, col2, col3 = st.columns(3)
 
 with col1:
