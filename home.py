@@ -28,10 +28,7 @@ with col3:
    st.header("Setosa")
    st.image("./img/iris3.jpg")
 
-import streamlit as st
-import pandas as pd
-import numpy as np
-from sklearn.neighbors import KNeighborsClassifier
+
 import os
 
 # ------------------------------
@@ -45,7 +42,7 @@ html_7 = """
 st.markdown(html_7, unsafe_allow_html=True)
 st.markdown("")
 
-dt = pd.read_csv("/data/iris.csv")
+dt = pd.read_csv("./data/iris.csv")
 st.write(dt.head(10))
 
 dt1 = dt['petallength'].sum()
