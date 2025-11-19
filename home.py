@@ -79,4 +79,4 @@ if st.button("ทำนายผล"):
    else:
     st.image("./img/iris3.jpg")
 else:
-    st.write("ไม่ทำนาย")
+    st.write("ไม่ทำนาย") 
