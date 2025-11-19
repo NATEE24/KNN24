@@ -1,3 +1,17 @@
+import os
+st.write("ตำแหน่งไฟล์ปัจจุบัน:", os.getcwd())
+
+st.write("รายการไฟล์ในโฟลเดอร์ปัจจุบัน:")
+st.write(os.listdir())
+
+if os.path.exists("data"):
+    st.write("รายการไฟล์ใน data/:")
+    st.write(os.listdir("data"))
+else:
+    st.write("❌ ไม่มีโฟลเดอร์ data")
+
+
+
 from sklearn.neighbors import KNeighborsClassifier
 import streamlit as st
 import pandas as pd
