@@ -45,7 +45,14 @@ html_7 = """
 st.markdown(html_7, unsafe_allow_html=True)
 st.markdown("")
 
-dt = pd.read_csv("data/iris.csv")
+import os
+import pandas as pd
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+data_path = os.path.join(BASE_DIR, "data", "iris.csv")
+
+dt = pd.read_csv(data_path)
+
 st.write(dt.head(10))
 
 dt1 = dt['petallength'].sum()
